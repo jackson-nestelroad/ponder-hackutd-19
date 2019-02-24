@@ -1,0 +1,12 @@
+div.roomCode {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 64pt;
+    color: rgb(56, 49, 44);
+    font-family: 'Consolas'
+}
+
+div.roomCode span.title {
+    font-size: 24pt;
+    color: #989494;
+}

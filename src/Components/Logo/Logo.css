@@ -1,0 +1,41 @@
+div.logo {
+    text-align: center;
+    margin: 64px auto;
+}
+
+div.logo > * {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+div.logo .text {
+    font-family: Audiowide;
+    color: rgb(56, 49, 44);
+    font-size: 96pt;
+    user-select: none;
+    -webkit-user-select: none;
+    font-weight: 700;
+}
+
+div.logo .image {
+    background-image: url(/lightbulb.svg);
+    background-size: 100% 100%;
+    width: 96pt;
+    height: 96pt;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: image-move-in 1s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image-move-in {
+    from { 
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

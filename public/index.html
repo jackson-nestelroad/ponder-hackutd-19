@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ponder</title>
+    <meta charset="utf-8" />
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <link rel="manifest" href="Icons/site.webmanifest">
+    <link rel="mask-icon" href="Icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script type="text/javascript">
+      // IE <9 Support 
+      document.createElement("bg");
+    </script>
+    <style>
+      body {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        min-width: 1100px;
+      }
+
+      select {
+        appearance: none;
+      }
+
+      bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        margin: 0;
+      }
+
+      #pattern-hex polygon {
+        fill: #F7F7FB;
+        stroke: white;
+        opacity: 1;
+        stroke-width: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <bg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+          <defs>
+              <pattern id="pattern-hex" x="0" y="0" width="150" height="86.6025403784" patternUnits="userSpaceOnUse" patternTransform="scale(0.75) translate(0) rotate(30)">
+                  <polygon id="hexagon" points="125,43.3012701892 100,86.6025403784 50,86.6025403784 25,43.3012701892 50,0 100,0" />
+                  <use xlink:href="#hexagon" x="75" y="-43.3012701892" />
+                  <use xlink:href="#hexagon" x="75" y="43.3012701892" />
+                  <use xlink:href="#hexagon" x="-75" y="43.3012701892" />
+                  <use xlink:href="#hexagon" x="-75" y="-43.3012701892" />
+              </pattern>
+          </defs>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-hex)" />
+        </svg>
+    </bg>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="react"></div>
+  </body>
+</html>

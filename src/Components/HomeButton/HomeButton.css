@@ -1,0 +1,29 @@
+button.home { 
+    width: 220px;
+    height: 48px;
+    color: white;
+    background-color: #FFA500;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-weight: 700;
+    margin: 52px;
+    border: solid 1px #FFA500;
+    border-radius: 30px;
+    box-shadow: 0px 10px 0px #A84000;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+button.home:hover {
+    box-shadow: 0px 7px 0px #A84000;
+    transform: translateY(3px);
+}
+
+button.home:active {
+    box-shadow: 0px 1px 0px #A84000;
+    transform: translateY(9px);
+}
+
+button:focus { 
+    outline: none;
+}

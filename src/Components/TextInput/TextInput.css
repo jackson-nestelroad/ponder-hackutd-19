@@ -1,0 +1,18 @@
+input.Name {
+    width: 440px;
+    height: auto;
+    padding: 12px;
+    border: solid 1px #FFA500;
+    border-radius: 6px;
+    background-color: white;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+input.error {
+    background-color: #FFCECC;
+}
+
+input:focus { 
+    outline: none;
+}

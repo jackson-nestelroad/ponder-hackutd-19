@@ -1,0 +1,24 @@
+div.idea table {
+    margin: 8px auto;
+    border: 1px solid #FFA500;
+    border-radius: 8px;
+    background-color: white;
+    width: 60%;
+}
+
+div.idea tr {
+    height: 20px;
+}
+
+div.idea td.text {
+    padding: 8px;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    width: 80%;
+    word-break: break-all;
+}
+
+div.idea td.creator {
+    font-size: 8pt;
+    font-style: italic;
+}
