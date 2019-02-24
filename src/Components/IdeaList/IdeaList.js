@@ -52,7 +52,7 @@ export default class IdeaList extends Component {
             this.addUser();
 
             this.props.firebase.getSession(this.props.session).on('value', snapshot => {
-                console.log(snapshot.val());
+                // console.log(snapshot.val());
                 if(snapshot.val() === null) { 
                     this.props.handler('Room does not exist!');
                 }

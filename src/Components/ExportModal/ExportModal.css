@@ -1,0 +1,65 @@
+div.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    animation: fade-in-modal 1s;
+}
+
+@keyframes fade-in-modal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+div.modal div.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+    flex: 1;
+    text-align: center;
+    min-width: 400px;
+    width: 400px;
+    height: auto;
+    animation: slide-div-in 1s;
+}
+
+@keyframes slide-div-in {
+    from { top: 0; opacity: 0; }
+    to  {top: 50%; opacity: 1; }
+}
+
+textarea.export {
+    width: 70%;
+    height: 300px;
+    padding: 12px;
+    font-size: 8pt;
+    border: solid 1px #DAD8D6;
+    border-radius: 6px;
+    background-color: white;
+    font-family: 'Open Sans';
+    resize: none;
+}
+
+textarea.export:focus {
+    outline: none;
+}
+
+div.modal button.close {
+    color: #C4C4D5;
+    font-size: 48pt;
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+}
