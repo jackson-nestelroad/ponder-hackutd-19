@@ -37,6 +37,10 @@ export default class Session extends Component {
             this.setState({ exportModal: true });
     }
 
+    handleBackButton = () => {
+        window.location.reload();
+    }
+
     exportClose = () => {
         this.setState({ exportModal: false });
     }
